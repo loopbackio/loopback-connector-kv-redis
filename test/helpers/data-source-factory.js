@@ -5,14 +5,18 @@ var connector = require('../..');
 var extend = require('util')._extend;
 
 var SETTINGS = {
-  // FIXME when running on IBM JenkinsCI:
-  // - use REDIS_HOST and REDIS_PORT,
-  // - use unique DB number (PID % 16)
-  host: 'localhost',
+  host: process.env.REDIS_HOST || 'localhost',
+  port: process.env.REDIS_PORT || undefined,
   connector: connector,
   // produce nicer stack traces
   showFriendlyErrorStack: true,
 };
+
+if (process.env.CI) {
+  // Try to avoid collisions when multiple CI jobs are running on the same host
+  // by picking a (semi)random database number to use.
+  SETTINGS.db = process.pid % 16;
+}
 
 function createDataSource(options) {
   var settings = extend({}, SETTINGS);
