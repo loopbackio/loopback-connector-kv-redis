@@ -15,7 +15,7 @@
   },
   "main": "lib/kv-redis.js",
   "scripts": {
-    "test": "mocha test/integration/*.js",
+    "test": "mocha test/unit/*.js && mocha test/integration/*.js",
     "posttest": "npm run lint",
     "lint": "eslint ."
   },
