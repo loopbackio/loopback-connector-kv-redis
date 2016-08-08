@@ -24,7 +24,8 @@
     "debug": "^2.2.0",
     "ioredis": "^2.2.0",
     "loopback-connector": "^2.4.0",
-    "msgpack5": "^3.4.0"
+    "msgpack5": "^3.4.0",
+    "strong-globalize": "^2.6.6"
   },
   "devDependencies": {
     "chai": "^3.5.0",
