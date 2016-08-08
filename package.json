@@ -15,7 +15,7 @@
   },
   "main": "lib/kv-redis.js",
   "scripts": {
-    "test": "mocha test/integration/*.js",
+    "test": "mocha test/unit/*.js && mocha test/integration/*.js",
     "posttest": "npm run lint",
     "lint": "eslint ."
   },
@@ -23,7 +23,8 @@
   "dependencies": {
     "debug": "^2.2.0",
     "ioredis": "^2.2.0",
-    "loopback-connector": "^2.4.0"
+    "loopback-connector": "^2.4.0",
+    "msgpack5": "^3.4.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -31,6 +32,7 @@
     "eslint": "^2.13.1",
     "eslint-config-loopback": "^4.0.0",
     "loopback-datasource-juggler": "^2.47.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "should": "^8.4.0"
   }
 }
