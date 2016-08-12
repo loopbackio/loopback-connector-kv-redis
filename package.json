@@ -28,6 +28,7 @@
     "strong-globalize": "^2.6.6"
   },
   "devDependencies": {
+    "bluebird": "^3.4.1",
     "chai": "^3.5.0",
     "dirty-chai": "^1.2.2",
     "eslint": "^2.13.1",
