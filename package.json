@@ -24,9 +24,11 @@
     "debug": "^2.2.0",
     "ioredis": "^2.2.0",
     "loopback-connector": "^2.4.0",
-    "msgpack5": "^3.4.0"
+    "msgpack5": "^3.4.0",
+    "strong-globalize": "^2.6.6"
   },
   "devDependencies": {
+    "bluebird": "^3.4.1",
     "chai": "^3.5.0",
     "dirty-chai": "^1.2.2",
     "eslint": "^2.13.1",
