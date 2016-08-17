@@ -6,7 +6,7 @@ var extend = require('util')._extend;
 
 var SETTINGS = {
   host: process.env.REDIS_HOST || 'localhost',
-  port: process.env.REDIS_PORT || undefined,
+  port: +process.env.REDIS_PORT || undefined,
   connector: connector,
   // produce nicer stack traces
   showFriendlyErrorStack: true,
