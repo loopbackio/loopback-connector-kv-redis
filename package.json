@@ -15,7 +15,7 @@
   },
   "main": "lib/kv-redis.js",
   "scripts": {
-    "test": "mocha test/unit test/integration",
+    "test": "mocha test/integration",
     "posttest": "npm run lint",
     "lint": "eslint ."
   },
@@ -23,8 +23,7 @@
   "dependencies": {
     "debug": "^2.2.0",
     "ioredis": "^2.2.0",
-    "loopback-connector": "^2.4.0",
-    "msgpack5": "^3.4.0",
+    "loopback-connector": "^2.6.0",
     "strong-globalize": "^2.6.6"
   },
   "devDependencies": {
