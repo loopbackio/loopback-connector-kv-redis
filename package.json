@@ -1,6 +1,6 @@
 {
   "name": "loopback-connector-kv-redis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The official Redis KeyValue connector for LoopBack",
   "keywords": [
     "StrongLoop",
