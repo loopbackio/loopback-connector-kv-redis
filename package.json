@@ -23,7 +23,7 @@
   "dependencies": {
     "debug": "^2.2.0",
     "ioredis": "^2.2.0",
-    "loopback-connector": "^2.6.0",
+    "loopback-connector": "^2.7.1",
     "strong-globalize": "^2.6.6"
   },
   "devDependencies": {
