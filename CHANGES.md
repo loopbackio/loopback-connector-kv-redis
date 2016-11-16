@@ -1,3 +1,11 @@
+2016-11-16, Version 1.1.0
+=========================
+
+ * Support the json pack format (Masu Lin)
+
+ * Use the new helpers from loopback-connector base (Miroslav Bajtoš)
+
+
 2016-10-21, Version 1.0.1
 =========================
 
