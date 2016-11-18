@@ -36,7 +36,7 @@
     "dirty-chai": "^1.2.2",
     "eslint": "^2.13.1",
     "eslint-config-loopback": "^4.0.0",
-    "loopback-datasource-juggler": "^3.0.0",
+    "loopback-datasource-juggler": "^2.53.0",
     "mocha": "^3.0.2",
     "should": "^8.4.0"
   }
