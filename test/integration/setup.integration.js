@@ -38,4 +38,23 @@ describe('setup', function() {
       });
     });
   });
+
+  it('favours user-defined URL settings', function(done) {
+    var host = process.env.REDIS_HOST || 'localhost';
+    var port = +process.env.REDIS_PORT || 6379;
+    var db = process.pid % 16;
+    var url = 'redis://' + host + ':' + port + '/' + db;
+    var ds = createDataSource({
+      url: url,
+      host: 'invalid-host',
+      port: 'invalid-port',
+    });
+    var driverSettings = ds.connector._client.options;
+    expect(driverSettings.port).to.not.equal('invalid-host');
+    expect(driverSettings.host).to.equal(host);
+    expect(driverSettings.port).to.not.equal('invalid-port');
+    expect(driverSettings.port).to.equal(port);
+    expect(driverSettings.db).to.equal(db);
+    ds.ping(done);
+  });
 });
