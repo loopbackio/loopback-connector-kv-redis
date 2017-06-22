@@ -1,3 +1,27 @@
+2017-06-22, Version 3.0.0-alpha.2
+=================================
+
+ * Update translated strings Q2 2017 (Allen Boone)
+
+ * Update connector version to 4.0.0 (#30) (Sakib Hasan)
+
+ * Remove node 10 and 12 travis (#31) (Sakib Hasan)
+
+ * Remove flush op flag (Simon Ho)
+
+ * Disable flush operation tests (Simon Ho)
+
+ * Update paid support URL (Siddhi Pai)
+
+ * Favour user-defined URL settings (Simon Ho)
+
+ * Start 3.x + drop support for Node v0.10/v0.12 (siddhipai)
+
+ * Drop support for Node v0.10 and v0.12 (Siddhi Pai)
+
+ * Start the development of the next major version (Siddhi Pai)
+
+
 2016-11-16, Version 1.1.0
 =========================
 
