@@ -1,4 +1,6 @@
 {
-  "5912dd6a0c51505723d021ed4e8f1bda": "A chave não existe ou o tempo limite não pode ser configurado. Modelo: {0} Chave: {1}"
+  "00ce34e2ce4edb5a6fa5cbca5e6b8776": "Não é possível obter TTL para chave desconhecida. Modelo: {0} Chave: {1}",
+  "5912dd6a0c51505723d021ed4e8f1bda": "A chave não existe ou o tempo limite não pode ser configurado. Modelo: {0} Chave: {1}",
+  "6c36fd4c4bd847978b89f2933eb2e562": "Aviso: a varredura de chave retornou uma chave pertencente a um modelo errado.\nNome do modelo esperado: {0}\nNome do modelo real: {1}\nA chave: {2}"
 }
 

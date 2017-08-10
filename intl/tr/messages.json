@@ -1,4 +1,6 @@
 {
-  "5912dd6a0c51505723d021ed4e8f1bda": "Anahtar yok ya da zaman aşımı ayarlanamıyor. Model: {0} Anahtar: {1}"
+  "00ce34e2ce4edb5a6fa5cbca5e6b8776": "Bilinmeyen anahtar için TTL alınamıyor. Model: {0} Anahtar: {1}",
+  "5912dd6a0c51505723d021ed4e8f1bda": "Anahtar yok ya da zaman aşımı ayarlanamıyor. Model: {0} Anahtar: {1}",
+  "6c36fd4c4bd847978b89f2933eb2e562": "Uyarı: anahtar taraması, yanlış modele ait olan bir anahtar döndürdü.\nBeklenen model adı: {0}\nGerçek model adı:   {1}\nAnahtar: {2}"
 }
 

@@ -1,4 +1,6 @@
 {
-  "5912dd6a0c51505723d021ed4e8f1bda": "La clé n'existe pas ou le délai ne peut pas être défini. Modèle : {0} Clé : {1}"
+  "00ce34e2ce4edb5a6fa5cbca5e6b8776": "Impossible d'obtenir TTL pour la clé inconnue. Modèle : {0} Clé : {1}",
+  "5912dd6a0c51505723d021ed4e8f1bda": "La clé n'existe pas ou le délai ne peut pas être défini. Modèle : {0} Clé : {1}",
+  "6c36fd4c4bd847978b89f2933eb2e562": "Avertissement : l'analyse de clé à renvoyer une clé appartenant à un modèle incorrect. \nNom de modèle attendu : {0}\nNom de modèle réel :   {1}\nClé : {2}"
 }
 

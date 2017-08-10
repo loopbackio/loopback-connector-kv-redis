@@ -1,4 +1,6 @@
 {
-  "5912dd6a0c51505723d021ed4e8f1bda": "La clave no existe o no puede establecerse el tiempo de espera. Modelo: {0} Clave: {1}"
+  "00ce34e2ce4edb5a6fa5cbca5e6b8776": "No se puede obtener TTL para la clave desconocida. Modelo: {0} Clave: {1}",
+  "5912dd6a0c51505723d021ed4e8f1bda": "La clave no existe o no puede establecerse el tiempo de espera. Modelo: {0} Clave: {1}",
+  "6c36fd4c4bd847978b89f2933eb2e562": "Aviso: la exploración de claves ha devuelto una clave que pertenece a un modelo incorrecto. \nNombre de modelo esperado: {0}\nNombre de modelo real:   {1}\nLa clave: {2}"
 }
 
