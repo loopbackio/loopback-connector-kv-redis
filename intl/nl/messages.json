@@ -1,4 +1,6 @@
 {
-  "5912dd6a0c51505723d021ed4e8f1bda": "Sleutel bestaat niet of timeout kan niet worden ingesteld. Model: {0} Sleutel: {1}"
+  "00ce34e2ce4edb5a6fa5cbca5e6b8776": "TTL kan niet worden opgehaald voor onbekende sleutel. Model: {0} Sleutel: {1}",
+  "5912dd6a0c51505723d021ed4e8f1bda": "Sleutel bestaat niet of timeout kan niet worden ingesteld. Model: {0} Sleutel: {1}",
+  "6c36fd4c4bd847978b89f2933eb2e562": "Waarschuwing: sleutelscan heeft een sleutel opgeleverd die tot een verkeerd model behoort. \nNaam van verwacht model: {0}\nNaam van feitelijk model: {1}\nDe sleutel: {2}"
 }
 

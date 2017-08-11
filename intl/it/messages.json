@@ -1,4 +1,6 @@
 {
-  "5912dd6a0c51505723d021ed4e8f1bda": "La chiave non esiste o non è possibile impostare il timeout. Modello: {0} Chiave: {1}"
+  "00ce34e2ce4edb5a6fa5cbca5e6b8776": "Impossibile acquisire TTL per la chiave sconosciuta. Modello: {0} Chiave: {1}",
+  "5912dd6a0c51505723d021ed4e8f1bda": "La chiave non esiste o non è possibile impostare il timeout. Modello: {0} Chiave: {1}",
+  "6c36fd4c4bd847978b89f2933eb2e562": "Avvertenza: la scansione della chiave ha restituito una chiave che appartiene ad un modello errato. \nNome modello previsto: {0}\nNome modello effettivo:   {1}\nChiave: {2}"
 }
 
