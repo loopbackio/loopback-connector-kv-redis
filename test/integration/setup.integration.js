@@ -1,11 +1,11 @@
 'use strict';
 
-var createDataSource = require('../helpers/data-source-factory');
-var expect = require('../helpers/expect');
+const createDataSource = require('../helpers/data-source-factory');
+const expect = require('../helpers/expect');
 
 describe('setup', function() {
   it('reports connection errors by default', function(done) {
-    var ds = createDataSource.failing({lazyConnect: false});
+    const ds = createDataSource.failing({lazyConnect: false});
 
     ds.once('error', function(err) {
       expect(err.message).to.contain('ECONNREFUSED');
@@ -15,11 +15,11 @@ describe('setup', function() {
 
   context('with lazyConnect:true', function() {
     it('does not connect at setup time', function(done) {
-      var ds = createDataSource.failing({lazyConnect: true});
+      const ds = createDataSource.failing({lazyConnect: true});
 
       // Assume no connection was made if there is no error reported
       // within reasonable time. The test passes in such case.
-      var errTimeout = setTimeout(function() { done(); }, 1000);
+      const errTimeout = setTimeout(function() { done(); }, 1000);
 
       ds.once('error', function(err) {
         clearTimeout(errTimeout);
@@ -28,7 +28,7 @@ describe('setup', function() {
     });
 
     it('reports connection failure on the first command', function(done) {
-      var ds = createDataSource.failing({lazyConnect: true});
+      const ds = createDataSource.failing({lazyConnect: true});
       ds.ping(function(err) {
         // NOTE(bajtos) This depends on the current behaviour of ioredis.
         // Currently, ioredis does not surface the original connection error
@@ -40,16 +40,16 @@ describe('setup', function() {
   });
 
   it('favours user-defined URL settings', function(done) {
-    var host = process.env.REDIS_HOST || 'localhost';
-    var port = +process.env.REDIS_PORT || 6379;
-    var db = process.pid % 16;
-    var url = 'redis://' + host + ':' + port + '/' + db;
-    var ds = createDataSource({
+    const host = process.env.REDIS_HOST || 'localhost';
+    const port = +process.env.REDIS_PORT || 6379;
+    const db = process.pid % 16;
+    const url = 'redis://' + host + ':' + port + '/' + db;
+    const ds = createDataSource({
       url: url,
       host: 'invalid-host',
       port: 'invalid-port',
     });
-    var driverSettings = ds.connector._client.options;
+    const driverSettings = ds.connector._client.options;
     expect(driverSettings.port).to.not.equal('invalid-host');
     expect(driverSettings.host).to.equal(host);
     expect(driverSettings.port).to.not.equal('invalid-port');

@@ -3,7 +3,7 @@
   "version": "3.0.0-alpha.2",
   "description": "The official Redis KeyValue connector for LoopBack",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "keywords": [
     "StrongLoop",
@@ -24,20 +24,20 @@
   },
   "license": "MIT",
   "dependencies": {
-    "debug": "^2.2.0",
-    "ioredis": "^2.2.0",
+    "debug": "^3.1.0",
+    "ioredis": "^3.2.2",
     "loopback-connector": "^4.0.0",
-    "strong-globalize": "^2.6.6"
+    "strong-globalize": "^4.1.0"
   },
   "devDependencies": {
     "async-iterators": "^0.2.2",
     "bluebird": "^3.4.1",
-    "chai": "^3.5.0",
-    "dirty-chai": "^1.2.2",
-    "eslint": "^2.13.1",
-    "eslint-config-loopback": "^4.0.0",
+    "chai": "^4.1.2",
+    "dirty-chai": "^2.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-loopback": "^10.0.0",
     "loopback-datasource-juggler": "^3.0.0",
-    "mocha": "^3.0.2",
+    "mocha": "^5.2.0",
     "should": "^8.4.0"
   }
 }

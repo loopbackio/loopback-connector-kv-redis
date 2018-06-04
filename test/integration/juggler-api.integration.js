@@ -1,8 +1,8 @@
 'use strict';
 
-var createDataSource = require('../helpers/data-source-factory');
-var expect = require('../helpers/expect');
-var kvaoTestSuite = require('loopback-datasource-juggler/test/kvao.suite.js');
+const createDataSource = require('../helpers/data-source-factory');
+const expect = require('../helpers/expect');
+const kvaoTestSuite = require('loopback-datasource-juggler/test/kvao.suite.js');
 
 describe('Juggler API', function() {
   context('using binary packer', function() {
