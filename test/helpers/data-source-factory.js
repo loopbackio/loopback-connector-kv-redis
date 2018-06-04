@@ -1,10 +1,9 @@
 'use strict';
 
-var DataSource = require('loopback-datasource-juggler').DataSource;
-var connector = require('../..');
-var extend = require('util')._extend;
+const DataSource = require('loopback-datasource-juggler').DataSource;
+const connector = require('../..');
 
-var SETTINGS = {
+const SETTINGS = {
   host: process.env.REDIS_HOST || 'localhost',
   port: +process.env.REDIS_PORT || undefined,
   connector: connector,
@@ -19,18 +18,17 @@ if (process.env.CI) {
 }
 
 function createDataSource(options) {
-  var settings = extend({}, SETTINGS);
-  settings = extend(settings, options);
+  const settings = Object.assign({}, SETTINGS, options);
 
   return new DataSource(settings);
 };
 
 module.exports = createDataSource;
 
-var invalidPort = 4; // invalid port where nobody is listening
+let invalidPort = 4; // invalid port where nobody is listening
 
 createDataSource.failing = function(options) {
-  var settings = extend({
+  const settings = Object.assign({
     host: '127.0.0.1',
     port: invalidPort++,
 
@@ -43,7 +41,7 @@ createDataSource.failing = function(options) {
 };
 
 createDataSource.json = function(options) {
-  var settings = extend({
+  const settings = Object.assign({
     packer: 'json',
   }, options);
 
@@ -51,7 +49,7 @@ createDataSource.json = function(options) {
 };
 
 createDataSource.jsonWithHexBuffers = function(options) {
-  var settings = extend({
+  const settings = Object.assign({
     packer: 'json',
     bufferEncoding: 'hex',
   }, options);
@@ -60,7 +58,7 @@ createDataSource.jsonWithHexBuffers = function(options) {
 };
 
 beforeEach(function clearDatabase(done) {
-  var ds = createDataSource();
+  const ds = createDataSource();
   ds.connector.execute('FLUSHDB', function(err) {
     if (err) return done(err);
     ds.disconnect(done);

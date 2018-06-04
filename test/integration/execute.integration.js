@@ -1,11 +1,11 @@
 'use strict';
 
-var createDataSource = require('../helpers/data-source-factory');
-var expect = require('../helpers/expect');
+const createDataSource = require('../helpers/data-source-factory');
+const expect = require('../helpers/expect');
 
 describe('execute', function() {
   it('returns "INFO keyspace" result as a Buffer', function(done) {
-    var ds = createDataSource();
+    const ds = createDataSource();
     ds.connector.execute('INFO', ['keyspace'], function(err, result) {
       if (err) return done(err);
       expect(result).to.be.instanceOf(Buffer);
@@ -17,7 +17,7 @@ describe('execute', function() {
 
   it('returns "INFO keyspace" result as a Buffer w/ json packer',
     function(done) {
-      var ds = createDataSource.json();
+      const ds = createDataSource.json();
       ds.connector.execute('INFO', ['keyspace'], function(err, result) {
         if (err) return done(err);
         expect(result).to.be.instanceOf(Buffer);
