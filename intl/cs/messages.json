@@ -1,0 +1,6 @@
+{
+  "00ce34e2ce4edb5a6fa5cbca5e6b8776": "Nelze získat TTL pro neznámý klíč. Model: {0} Klíč: {1}",
+  "5912dd6a0c51505723d021ed4e8f1bda": "Klíč neexistuje nebo časový limit nelze nastavit. Model: {0} Klíč: {1}",
+  "6c36fd4c4bd847978b89f2933eb2e562": "Varování: Skenování klíče vrátilo klíč patřící chybnému modelu.\nOčekávaný název modelu: {0}\nSkutečný název modelu:   {1}\nKlíč: {2}"
+}
+
