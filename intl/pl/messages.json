@@ -1,0 +1,6 @@
+{
+  "00ce34e2ce4edb5a6fa5cbca5e6b8776": "Nie można uzyskać wartości TTL dla nieznanego klucza. Model: {0}, klucz: {1}",
+  "5912dd6a0c51505723d021ed4e8f1bda": "Klucz nie istnieje lub nie można ustawić limitu czasu. Model: {0}, klucz: {1}",
+  "6c36fd4c4bd847978b89f2933eb2e562": "Ostrzeżenie: skanowanie klucza zwróciło klucz należący do niewłaściwego modelu. \nNazwa oczekiwanego modelu: {0}\nRzeczywista nazwa modelu:   {1}\nKlucz: {2}"
+}
+
