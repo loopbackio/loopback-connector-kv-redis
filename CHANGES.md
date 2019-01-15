@@ -1,3 +1,29 @@
+2019-01-15, Version 3.0.1
+=========================
+
+ * [WebFM] cs/pl/ru translation (candytangnb)
+
+ * Upgrade dependencies (Miroslav Bajtoš)
+
+ * Upgrade codebase to ES6 (Miroslav Bajtoš)
+
+ * Drop support for Node.js 4.x (Miroslav Bajtoš)
+
+ * add delete method (Matteo Padovano)
+
+ * Update LICENSE (Diana Lau)
+
+ * Add stalebot configuration (Kevin Delisle)
+
+ * Update Issue and PR Templates (#36) (Sakib Hasan)
+
+ * Update translated strings Q3 2017 (Allen Boone)
+
+ * update messages.json (Diana Lau)
+
+ * Add CODEOWNER file (Diana Lau)
+
+
 2017-06-22, Version 3.0.0-alpha.2
 =================================
 
