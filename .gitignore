@@ -14,3 +14,4 @@
 *.tgz
 node_modules
 checkstyle.xml
+**/node_modules/

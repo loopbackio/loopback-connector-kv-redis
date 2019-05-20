@@ -5,8 +5,9 @@
 
 'use strict';
 
-const DataSource = require('loopback-datasource-juggler').DataSource;
 const connector = require('../..');
+const juggler = require('loopback-datasource-juggler');
+let DataSource = juggler.DataSource;
 
 const SETTINGS = {
   host: process.env.REDIS_HOST || 'localhost',
@@ -60,6 +61,10 @@ createDataSource.jsonWithHexBuffers = function(options) {
   }, options);
 
   return createDataSource(settings);
+};
+
+createDataSource.resetDataSourceClass = function(ctor) {
+  DataSource = ctor || juggler.DataSource;
 };
 
 beforeEach(function clearDatabase(done) {
