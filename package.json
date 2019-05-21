@@ -35,7 +35,7 @@
     "chai": "^4.1.2",
     "dirty-chai": "^2.0.1",
     "eslint": "^5.16.0",
-    "eslint-config-loopback": "^10.0.0",
+    "eslint-config-loopback": "^13.1.0",
     "juggler-v3": "file:./deps/juggler-v3",
     "juggler-v4": "file:./deps/juggler-v4",
     "loopback-datasource-juggler": "^4.0.0",
