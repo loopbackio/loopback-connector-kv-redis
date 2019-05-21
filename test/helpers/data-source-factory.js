@@ -27,7 +27,7 @@ function createDataSource(options) {
   const settings = Object.assign({}, SETTINGS, options);
 
   return new DataSource(settings);
-};
+}
 
 module.exports = createDataSource;
 
