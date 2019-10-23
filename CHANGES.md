@@ -1,4 +1,22 @@
-2019-01-15, Version 3.0.1
+2019-10-23, Version 3.0.2
+=========================
+
+ * Fix connect error handling (Raymond Feng)
+
+ * Update eslint-config-loopback to 13.1.0 (Miroslav Bajtoš)
+
+ * Update dependencies to latest versions (Miroslav Bajtoš)
+
+ * Drop Node.js 6 from supported platforms (Miroslav Bajtoš)
+
+ * Add Node.js 12 to CI build matrix (Miroslav Bajtoš)
+
+ * Run shared tests from both v3 and v4 of juggler (Miroslav Bajtoš)
+
+ * chore: update copyrights years (Agnes Lin)
+
+
+2019-01-14, Version 3.0.1
 =========================
 
  * [WebFM] cs/pl/ru translation (candytangnb)
