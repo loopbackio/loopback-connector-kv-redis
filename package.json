@@ -22,6 +22,11 @@
     "posttest": "npm run lint",
     "lint": "eslint ."
   },
+  "files": [
+    "intl",
+    "lib",
+    "docs.json"
+  ],
   "license": "MIT",
   "dependencies": {
     "debug": "^4.1.1",
