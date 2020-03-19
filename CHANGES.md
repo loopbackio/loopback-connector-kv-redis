@@ -1,4 +1,12 @@
-2019-10-23, Version 3.0.2
+2020-03-19, Version 3.0.3
+=========================
+
+ * Exclude 'deps' and '.github' from npm publish (Dominique Emond)
+
+ * chore: improve issue and PR templates (Nora)
+
+
+2019-10-22, Version 3.0.2
 =========================
 
  * Fix connect error handling (Raymond Feng)
