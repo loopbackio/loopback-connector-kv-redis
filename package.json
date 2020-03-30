@@ -3,7 +3,7 @@
   "version": "3.0.3",
   "description": "The official Redis KeyValue connector for LoopBack",
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "keywords": [
     "StrongLoop",
