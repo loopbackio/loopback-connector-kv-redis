@@ -31,5 +31,11 @@ describe('execute', function() {
         done();
       });
     });
-});
 
+  it('accepts 4 arguments to support DataSource.prototype.execute',
+    async function() {
+      const ds = createDataSource();
+      const result = await ds.execute('INFO', ['keyspace'], {});
+      expect(result).to.be.instanceOf(Buffer);
+    });
+});
