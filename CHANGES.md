@@ -1,3 +1,15 @@
+2020-06-16, Version 4.0.0
+=========================
+
+ * Add support for `dataSource.execute` from LB4 (Chris Waddington)
+
+ * chore: update strong-globalize version (Diana Lau)
+
+ * travis: add Node.js 13.x (Miroslav Bajtoš)
+
+ * [SEMVER-MAJOR] Drop support for Node.js 8.x (Miroslav Bajtoš)
+
+
 2020-03-19, Version 3.0.3
 =========================
 
