@@ -1,8 +1,18 @@
-sudo: false
+branches:
+  only:
+    - master
+arch:
+  - arm64
+  - ppc64le
+  - s390x
+dist: focal
 language: node_js
 node_js:
-  - "10"
-  - "12"
-  - "13"
+  - 10
+  - 12
+  - 14
+  - 16
+  - 18
+
 services:
-    - redis-server
+  - redis
